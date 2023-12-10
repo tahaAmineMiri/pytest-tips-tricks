@@ -4,8 +4,8 @@ install:
 
 test:
 	python -m pytest -vv --cov=hello --cov=greeting tests
+	python -m pytest --nbval Untitled2.ipynb	#tests our jupyter notebook
 	# 	--cov=smath --cov=web tests
-	# python -m pytest --nbval notebook.ipynb	#tests our jupyter notebook
 	# #python -m pytest -v tests/test_web.py #if you just want to test web
 
 debug:
