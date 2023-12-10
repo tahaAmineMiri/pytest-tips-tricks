@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv test_hello.py
+	python -m pytest -vv --cov=hello test_hello.py
 	# python -m pytest -vvv --cov=hello --cov=greeting \
 	# 	--cov=smath --cov=web tests
 	# python -m pytest --nbval notebook.ipynb	#tests our jupyter notebook
